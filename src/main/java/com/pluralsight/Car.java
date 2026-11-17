@@ -11,6 +11,11 @@ public class Car extends Vehicle {
     // Only a car has this, so it lives here and not in Vehicle
     private int numberOfDoors;
 
+    public Car(String model, String color, int topSpeed, int fuelCapacity, int numberOfPassengers, int cargoCapacity, int numberOfDoors) {
+        super(model, color, topSpeed, fuelCapacity, numberOfPassengers, cargoCapacity);
+        this.numberOfDoors = numberOfDoors;
+    }
+
     public int getNumberOfDoors() {
         return numberOfDoors;
     }

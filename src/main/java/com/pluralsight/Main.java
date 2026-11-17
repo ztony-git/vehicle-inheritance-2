@@ -22,21 +22,13 @@ public class Main {
         // "new Moped()" builds ONE object that holds the Vehicle part (color,
         // fuelCapacity, ...) and the Moped part (maxWeight) together.
         // A Moped IS a Vehicle, so no separate Vehicle object is needed
-        Moped slowRide = new Moped();
-        slowRide.setColor("Red");           // inherited from Vehicle
-        slowRide.setFuelCapacity(5);        // inherited from Vehicle
+        Moped slowRide = new Moped("", "Red", 40, 100, 2, 0, 250);
 
-        SemiTruck semiTruck = new SemiTruck();
-        semiTruck.setNumberOfTrailers(2);   // SemiTruck's own setter
-        semiTruck.setFuelCapacity(100);     // inherited from Vehicle
+        SemiTruck semiTruck = new SemiTruck("", "", 90, 100, 8, 80, 2);
 
-        Hovercraft hovercraft = new Hovercraft();
-        hovercraft.setAirCushionPressure(50);   // Hovercraft's own setter
-        hovercraft.setColor("Blue");            // inherited from Vehicle
+        Hovercraft hovercraft = new Hovercraft("", "Blue", 95, 80, 4, 0, 50);
 
-        Car car = new Car();
-        car.setNumberOfDoors(4);            // Car's own setter
-        car.setTopSpeed(200);               // inherited from Vehicle
+        Car car = new Car("", "", 200, 40, 5, 0, 4);
 
         // Test the functionality of the classes and methods
         // Each of these methods exists only in its own child class:

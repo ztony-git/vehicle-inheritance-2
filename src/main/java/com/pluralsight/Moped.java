@@ -12,6 +12,11 @@ public class Moped extends Vehicle {
     // Only a moped has this, so it lives here and not in Vehicle
     private int maxWeight;
 
+    public Moped(String model, String color, int topSpeed, int fuelCapacity, int numberOfPassengers, int cargoCapacity, int maxWeight) {
+        super(model, color, topSpeed, fuelCapacity, numberOfPassengers, cargoCapacity);
+        this.maxWeight = maxWeight;
+    }
+
     public int getMaxWeight() {
         return maxWeight;
     }

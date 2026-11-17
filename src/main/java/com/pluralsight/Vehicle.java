@@ -25,6 +25,15 @@ public class Vehicle {
     private int numberOfPassengers;
     private int cargoCapacity;
 
+    public Vehicle(String model, String color, int topSpeed, int fuelCapacity, int numberOfPassengers, int cargoCapacity) {
+        this.model = model;
+        this.color = color;
+        this.topSpeed = topSpeed;
+        this.fuelCapacity = fuelCapacity;
+        this.numberOfPassengers = numberOfPassengers;
+        this.cargoCapacity = cargoCapacity;
+    }
+
     // Getters and setters: public, so they are inherited by every child
     // class and can be called on a Moped, a Car, a SemiTruck or a Hovercraft
     public String getModel() {
